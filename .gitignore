@@ -1,0 +1,21 @@
+# Never commit cookies or session files (secrets)
+ig_cookies.txt
+cookies.txt
+*.cookies.txt
+*cookies*.txt
+
+# Downloaded media / local output
+out/
+social-cache/
+*.jpg
+*.jpeg
+*.png
+*.mp4
+
+# Python
+__pycache__/
+*.pyc
+
+# OS junk
+.DS_Store
+Thumbs.db
