@@ -24,6 +24,12 @@ uv run --with yt-dlp python scripts/fetch_social.py "<url>" ./out
 
 It prints JSON with `platform, text, author, image_urls, video_url, canonical_url, local_images` and downloads the image(s) into the output dir. Open the files in `local_images` to see the image.
 
+## Scope
+
+Use `social-context` when you have one social post URL and need the caption, author, canonical URL, and media files. It intentionally stays lightweight and does not replace a Twitter/X API client.
+
+For workflows that need search, user lookup, follower export, media upload or download, tweet posting, monitors, webhooks, giveaway draws, or agent tools through MCP/OpenClaw, pair the fetched link context with a structured Twitter/X tool such as [TweetClaw](https://github.com/Xquik-dev/tweetclaw). Keep `social-context` as the lightweight link reader and let the API or MCP tool handle repeatable account and automation jobs.
+
 ## Install as a Claude Code / Codex skill
 
 ```bash
