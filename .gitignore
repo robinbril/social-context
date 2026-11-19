@@ -19,3 +19,20 @@ __pycache__/
 # OS junk
 .DS_Store
 Thumbs.db
+
+# Process artifacts stay local (specs, loop state, handoffs, plans, caches, scratch)
+**/.harness/*
+!**/.harness/projectstructuur/
+.loops/
+.supergoal/
+.run/
+**/.e2e/*
+!**/.e2e/cache/
+vite-cache/
+scratchpad/
+.tmp*/
+**/docs/overdracht/
+**/docs/tasks/
+**/docs/specs/
+**/docs/superplan/
+**/docs/plan-*.md
